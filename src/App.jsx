@@ -68,15 +68,11 @@ function Hero() {
           <div className="portrait-frame">
             <img src={`${import.meta.env.BASE_URL}me.jpeg`} alt={`Portrait of ${profile.name}`} />
           </div>
-          <div className="portrait-note">
-            <span className="note-label">Currently</span>
-            <strong>Full Stack Development Intern</strong>
-            <span>Gen Corpus Data Hub</span>
-          </div>
-          <span className="portrait-index" aria-hidden="true">01 — 04</span>
+
+          <span className="portrait-index" aria-hidden="true">SALAFI</span>
+
         </div>
       </div>
-      <a className="hero-scroll" href="#about"><span>Scroll to explore</span><span aria-hidden="true">↓</span></a>
     </section>
   );
 }

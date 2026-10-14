@@ -60,15 +60,16 @@ main { width: min(100%, 1440px); margin-inline: auto; padding-inline: clamp(20px
 .text-link { color: #f7f7f7; font-weight: 600; text-decoration: none; }
 .hero-location { margin: 34px 0 0; color: #cccccc; font-size: 0.82rem; }
 .hero-location span { padding-inline: 5px; color: #aaaaaa; }
-.portrait-area { position: relative; width: min(100%, 390px); justify-self: end; padding: 0 18px 30px 0; }
+.portrait-area { position: relative; width: min(100%, 320px); justify-self: end; padding: 0 18px 30px 0; }
 .portrait-area::before { position: absolute; inset: 18px 0 0 18px; background: #ffffff; content: ""; }
-.portrait-frame { position: relative; height: 440px; overflow: hidden; background: #888888; }
-.portrait-frame img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: center 28%; filter: grayscale(1); }
-.portrait-note { position: absolute; right: -20px; bottom: 0; display: grid; width: min(290px, 88%); gap: 2px; padding: 16px 18px; background: var(--paper); color: var(--ink); box-shadow: 0 12px 32px rgba(0, 0, 0, 0.18); }
+.portrait-frame { position: relative; }
+.portrait-frame img { display: block; width: 100%; height: auto; filter: grayscale(1); }
+.portrait-note { position: relative; display: grid; width: 100%; gap: 2px; margin-top: 12px; padding: 16px 18px; background: var(--paper); color: var(--ink); box-shadow: 0 12px 32px rgba(0, 0, 0, 0.18); }
 .portrait-note strong { font: 600 1rem/1.3 var(--display); }
 .portrait-note > span:last-child { color: var(--muted); font-size: 0.82rem; }
 .note-label { color: var(--accent); font-size: 0.68rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; }
-.portrait-index { position: absolute; right: 4px; top: 12px; color: #dddddd; font-size: 0.7rem; letter-spacing: 0.08em; writing-mode: vertical-rl; }
+.portrait-index { position: absolute; right: 4px; top: 20px; color: black; font-size: 0.7rem; letter-spacing: 0.08em; writing-mode: vertical-rl; }
+
 .hero-scroll { position: absolute; right: clamp(28px, 5vw, 76px); bottom: 20px; display: flex; align-items: center; gap: 12px; color: #cccccc; font-size: 0.73rem; text-decoration: none; }
 .hero-scroll span:last-child { color: #ffffff; font-size: 1.05rem; }
 
@@ -157,7 +158,6 @@ main { width: min(100%, 1440px); margin-inline: auto; padding-inline: clamp(20px
   .hero { min-height: 570px; }
   .hero-inner { grid-template-columns: minmax(0, 1fr) minmax(250px, 0.72fr); gap: 5%; padding-inline: 6%; }
   .hero h1 { font-size: 4.6rem; }
-  .portrait-frame { height: 380px; }
   .content-section { grid-template-columns: minmax(160px, 0.65fr) minmax(0, 1.5fr); gap: 6%; }
   .project-grid { grid-template-columns: 1fr; }
   .project-item { min-height: 210px; }
@@ -181,8 +181,6 @@ main { width: min(100%, 1440px); margin-inline: auto; padding-inline: clamp(20px
   .button { min-height: 48px; padding-inline: 16px; }
   .hero-location { max-width: 34ch; margin-top: 16px; }
   .portrait-area { width: min(84%, 320px); justify-self: center; margin-right: 14px; }
-  .portrait-frame { height: 150px; }
-  .portrait-note { right: -20px; width: min(270px, 94%); }
   .hero-scroll { right: 24px; bottom: 18px; }
   .quick-facts { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .fact { padding: 16px 13px; border-bottom: 1px solid var(--line); }
