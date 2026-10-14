@@ -55,7 +55,7 @@ function Hero() {
       <div className="hero-inner">
         <div className="hero-copy">
           <p className="eyebrow"><span className="availability-dot" /> Portfolio / 2026</p>
-          <h1>Adnan Al<br /><span>Uthan PP</span></h1>
+          <h1>{profile.name}</h1>
           <p className="hero-role">{profile.role}<span className="role-divider">/</span> MERN stack · Python</p>
           <p className="hero-summary">I build practical, thoughtful web experiences for people and businesses.</p>
           <div className="hero-actions">
